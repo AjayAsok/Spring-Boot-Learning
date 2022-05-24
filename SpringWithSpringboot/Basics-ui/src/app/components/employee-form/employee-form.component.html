@@ -1,0 +1,19 @@
+<div class="card my-5">
+    <div class="card-body">
+        <form (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" [(ngModel)]="employee.name" class="form-control" id="name" name="name"
+                    placeholder="Enter name" required #name="ngModel">
+            </div>
+            <div [hidden]="!name.pristine" class="alert alert-danger">Name Required!</div>
+            <div class="form-group">
+                <label for="technology">Technology</label>
+                <input type="text" [(ngModel)]="employee.technology" class="form-control" id="technology"
+                    name="technology" placeholder="Enter technology" required #technology="ngModel">
+            </div>
+            <div [hidden]="!technology.pristine" class="alert alert-danger">Technology Required!</div>
+            <button type="submit" [disabled]="!employeeForm.form.valid" class="btn btn-info">Submit</button>
+        </form>
+    </div>
+</div>

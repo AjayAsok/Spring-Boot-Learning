@@ -8,11 +8,11 @@
             </div>
             <div [hidden]="!name.pristine" class="alert alert-danger">Name Required!</div>
             <div class="form-group">
-                <label for="technology">Technology</label>
+                <label for="technology">Sharing Item</label>
                 <input type="text" [(ngModel)]="employee.technology" class="form-control" id="technology"
                     name="technology" placeholder="Enter technology" required #technology="ngModel">
             </div>
-            <div [hidden]="!technology.pristine" class="alert alert-danger">Technology Required!</div>
+            <div [hidden]="!technology.pristine" class="alert alert-danger">Item Required!</div>
             <button type="submit" [disabled]="!employeeForm.form.valid" class="btn btn-info">Submit</button>
         </form>
     </div>

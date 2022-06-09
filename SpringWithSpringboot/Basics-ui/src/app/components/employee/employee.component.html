@@ -1,20 +1,23 @@
 <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card bg-dark my-5">
-          <div class="card-body">
-            <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
-            <ul class="text-center list-inline py-3">
-              <li class="list-inline-item">
-                <a routerLink="/employees" class="btn btn-info">Employee Details</a>
-                  </li>
-              <li class="list-inline-item">
-                <a routerLink="/add" class="btn btn-info">Add Employee</a>
-                  </li>
-            </ul>
-          </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card bg-dark my-5">
+        <div class="card-body">
+          <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
+          <ul class="text-center list-inline py-3">
+            <li class="list-inline-item">
+              <a routerLink="/employees" class="btn btn-info">User Details</a>
+            </li>
+            <li class="list-inline-item">
+              <a routerLink="/add" class="btn btn-info">Add User</a>
+            </li>
+            <li class="list-inline-item">
+              <a routerLink="/item" class="btn btn-info">Items</a>
+            </li>
+          </ul>
         </div>
-        <router-outlet></router-outlet>
       </div>
+      <router-outlet></router-outlet>
     </div>
   </div>
+</div>
